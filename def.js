@@ -1,4 +1,4 @@
-var $links = $('.items li');
+var $links = $('.items li a')
 var $blocks = $('.include li');
 $links.on('click', function(){
   if(!$(this).hasClass('active')){

@@ -1,72 +1,92 @@
 body, html {
-	box-sizing: content-box;
-	margin: 0;
-	padding: 0;
-	height: 100% ;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  height: 100% ;
 }
 .wrapper {
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	height: 100% !important;
-	
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100% !important;
+  
 }
 header {
-	background-color: lavender;
+  background-color: lavender;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#logo {
+	width: 30%;
+}
+#title {
+	width: 100%;
+}
+h1, h2 {
+	text-align: center;
+	font-family: 'Lobster', cursive;
 }
 ul {
-	list-style-type:none;
-	padding: 0;
-	margin: 0;
-	
+  list-style-type:none;
+  padding: 0;
+  margin: 0;
+  
 }
 .items >  li{
-	border: 1px solid #001a00;
-	/*padding: 10px 5px 0 5px;*/
+  border: 1px solid #001a00;
+  /*padding: 10px 5px 0 5px;*/
 }
 .item_footer {
-	/*height: auto;*/
-	align-self: stretch;
+  /*height: auto;*/
+  align-self: stretch;
 }
-.items >  a {
-	text-decoration: none;
-	color: #000d1a;
-	display: block;
-	padding: 10px;
+li >  a {
+  text-decoration: none;
+  color: #000d1a;
+  display: block;
+  padding: 10px;
 }
-.items >  a:hover {
-	transition: .3s;
-	font-size: 35px;
-	background: linear-gradient(to right, rgba(230,255,242,1) 0%, rgba(244,241,249,1) 55%, rgba(255,230,255,1) 100%);
-	
-	
+li >  a:hover {
+  transition: .3s;
+  font-size: 35px;
+  background: linear-gradient(to right, rgba(230,255,242,1) 0%, rgba(244,241,249,1) 55%, rgba(255,230,255,1) 100%);
+  
 }
-
+.items > li:last-of-type {
+	color: #5c8a8a;
+}
 
 .container {
-	display: flex;
-	flex-direction: row;
-	align-items: stretch;
-	height: 100% !important;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  height: 100% !important;
+  font-family: 'Raleway', sans-serif;
 
 }
-.container li {
-      display: none;
-    }
-    .container li.active {
-      display: block;
-    }
 .items {
-	width: 30%;
-	background-color: #e6fff2;
+  width: 30%;
+  background-color: #e6fff2;
 }
 .include {
-	width: 70%;
-	background-color: #ffe6ff;
+  width: 70%;
+  background-color: #ffe6ff;
+}
+.include > li {
+    display: none;
+}
+.include > li.active {
+    display: block;
+    padding: 1em 0 0 2em;
+}
+p {
+	white-space: pre-wrap;
 }
 
 @media (max-width: 238px) {
-	body {
-		font-size: 0.75em;
-	}
+  body {
+    font-size: 0.75em;
+  }
 }
