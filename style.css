@@ -1,14 +1,22 @@
+* {
+	box-sizing: content-box;
+}
 body, html {
-  box-sizing: content-box;
   margin: 0;
   padding: 0;
-  min-height: 100% !important;
-  font-size: 20px;
 }
+html {
+	height: 100%;
+}
+body {
+    min-height: 100%;
+    font-size: 20px;
+  }
 .wrapper {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   
 }
 header {
@@ -93,6 +101,6 @@ p {
 
 @media (max-width: 238px) {
   body {
-    font-size: 0.75em;
+    font-size: 15px;
   }
 }
