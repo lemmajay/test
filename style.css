@@ -58,11 +58,12 @@ li >  a:hover {
   
 }
 footer {
+	align-items: stretch;
 	display: flex;
 	color: #5c8a8a;
-	height: 100%;
 	align-self: flex-end;
 	border: 1px solid #001a00;
+	/*min-height: 300px;*/
 }
 footer > p {
 	margin: 0 auto;
@@ -73,18 +74,20 @@ footer > p {
   flex-direction: row;
   font-family: 'Raleway', sans-serif;
   align-items: stretch;
+  height: 100%;
 
 }
 .first-column {
 	display: flex;
 	flex-direction: column;
-	flex-shrink: 3;
+	align-items: stretch;
 }
 .items, footer {
  
   background-color: #e6fff2;
 }
 .include {
+  align-self: stretch;
   flex-grow: 2;
   background-color: #ffe6ff;
 }
