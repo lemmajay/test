@@ -13,10 +13,12 @@ body {
     font-size: 20px;
   }
 .wrapper {
+  position: relative;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  justify-content: space-between;
   
 }
 header {
@@ -58,12 +60,11 @@ li >  a:hover {
   
 }
 footer {
-	align-items: stretch;
 	display: flex;
 	color: #5c8a8a;
-	align-self: flex-end;
+	align-self: stretch;
 	border: 1px solid #001a00;
-	/*min-height: 300px;*/
+	
 }
 footer > p {
 	margin: 0 auto;
@@ -81,6 +82,7 @@ footer > p {
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
+	/*height: 70%;*/
 }
 .items, footer {
  
